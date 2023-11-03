@@ -1,6 +1,13 @@
+/*
+ * High precision operations are simulation of manual calculation.
+*/
+
+#include <vector>
+
+using namespace std;
+
 // C = A + B, A >= 0, B >= 0
-vector<int> add(vector<int> &A, vector<int> &B)
-{
+vector<int> add(vector<int> &A, vector<int> &B) {
     if (A.size() < B.size()) return add(B, A);
 
     vector<int> C;
@@ -18,8 +25,7 @@ vector<int> add(vector<int> &A, vector<int> &B)
 }
 
 // C = A - B, A >= B, A >= 0, B >= 0
-vector<int> sub(vector<int> &A, vector<int> &B)
-{
+vector<int> sub(vector<int> &A, vector<int> &B) {
     vector<int> C;
     for (int i = 0, t = 0; i < A.size(); i ++ )
     {
@@ -35,8 +41,7 @@ vector<int> sub(vector<int> &A, vector<int> &B)
 }
 
 // C = A * b, A >= 0, b >= 0
-vector<int> mul(vector<int> &A, int b)
-{
+vector<int> mul(vector<int> &A, int b) {
     vector<int> C;
 
     int t = 0;
@@ -53,8 +58,7 @@ vector<int> mul(vector<int> &A, int b)
 }
 
 // A / b = C ... r, A >= 0, b > 0
-vector<int> div(vector<int> &A, int b, int &r)
-{
+vector<int> div(vector<int> &A, int b, int &r) {
     vector<int> C;
     r = 0;
     for (int i = A.size() - 1; i >= 0; i -- )

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 void quickSort(vector<int>& ary, int l, int r) {
