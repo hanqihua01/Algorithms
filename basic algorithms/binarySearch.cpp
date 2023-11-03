@@ -1,4 +1,4 @@
-bool check(int m) { /* ... */}
+bool check(int m) { /* ... */ }
 
 void binarySearch1(int l, int r) {
     while (l < r) {
