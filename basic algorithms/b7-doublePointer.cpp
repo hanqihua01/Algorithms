@@ -1,1 +1,1 @@
-// Double pointer algorithm can be used to solve the many problems
+// Double pointer algorithm can be used to solve many problems

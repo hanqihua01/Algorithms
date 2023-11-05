@@ -1,5 +1,4 @@
-/* High precision operations are simulation of manual calculation.
- */
+// High precision operations are simulation of manual calculation.
 
 #include <vector>
 
